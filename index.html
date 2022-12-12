@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jop Application Form</title>
+<link rel="stylesheet" href="\style\style.css"> 
+<script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+    <script src="scripts/scripts.js"></script>
+    <div class="header">
+        <h1>Job Application Form</h1>
+    </div>
+    <div class="forms">
+
+        <div class="form1">
+            <h1>Bilgiler</h1>
+            <form>
+                <label for="fname">Ad:<br></label>
+                <input type=" text" id="fname" name="fname " placeholder="adınızı girin"><br><br>   
+                <label for="lname">Soyad:</label><br>
+                <input type="text" id="lname" name="lname"  placeholder="soyadınızı girin"><br><br>
+                <label for="birthdate">Doğum Tarihinizi Girin</label><br>
+                <input type="date" id="birthdate" name="birthdate" placeholder="doğum tarihi"><br><br>
+            </form>
+        </div>
+
+        <div class="form2">
+            <h1>Deneyim</h1>
+            <form id="deneyimform">
+                <div class="formdeneyimm" id="formdeneyim">
+                
+                    <label for="cname">Şirket ismi</label><br>
+                    <input class="formdeneyim" type="text" id="cname" name="cname" placeholder="şirket ismi"><br><br>
+            
+                    <label for="styear"> başlangıç yılı</label><br>
+                    <input class="formdeneyim" type="date" id="styear" name="styear" placeholder="başlangıç tarihi"><br><br> 
+            
+                    <label for="enyear">Bitiş yılı</label><br>
+                    <input class="formdeneyim" type="date" id="enyear" name="enyear" placeholder="bitiş yılı" ><br><br>
+            
+                    <label for="cont">hala çalışıyorum</label>
+                    <input type="checkbox" id="cont" name="cont" onclick="halacal()"><br><br>
+            
+                </div>
+
+            </form>
+            <button id="addexpbut" onclick="addexp()">Deneyim Ekle</button>
+        </div>
+
+        
+
+        <div class="form3">
+            <h1>Beklentiler</h1>
+            <form>
+                <label for="slexpect">Maaş Beklentisi</label><br>
+                <input type="text" id="slexpect" name="slexpect" placeholder="maaş beklentisi"><br><br>
+                <label for="addnotes">Notlar</label><br>
+                <input type="text" id="addnotes" name="addnotes" placeholder="Ek notlarınızı ekleyin"><br><br>
+                
+            </form>
+    
+        </div>
+
+        <div class="subbutton">
+            <button   id="submitbuta" class= "submit" onclick="basarıyla()">Yükle</button>
+            <label class="subbut" id="subbut"></label>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
